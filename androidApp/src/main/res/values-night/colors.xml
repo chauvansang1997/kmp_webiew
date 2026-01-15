@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Night mode specific color overrides -->
+    <!-- Most colors are defined in values/colors.xml -->
+    <!-- These are the ones that need to change for dark mode -->
+
+    <!-- Background Colors for Night Mode -->
+    <color name="background_light">#121212</color>
+    <color name="surface_light">#1E1E1E</color>
+
+    <!-- Text Colors for Night Mode -->
+    <color name="text_primary_light">#FFFFFF</color>
+    <color name="text_secondary_light">#B3B3B3</color>
+    <color name="text_disabled_light">#616161</color>
+
+    <!-- Divider for Night Mode -->
+    <color name="divider_light">#424242</color>
+</resources>

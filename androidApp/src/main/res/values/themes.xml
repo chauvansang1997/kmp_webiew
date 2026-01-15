@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme -->
+    <style name="Theme.KmpWebView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_variant</item>
+
+        <!-- Background -->
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnBackground">@color/text_primary_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/white</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+        <item name="android:textColorHint">@color/text_disabled_light</item>
+
+        <!-- Window attributes -->
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Alternative Light Theme (Explicit) -->
+    <style name="Theme.KmpWebView.Light" parent="Theme.KmpWebView">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.KmpWebView.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">@dimen/corner_medium</item>
+        <item name="elevation">@dimen/elevation_medium</item>
+    </style>
+
+    <style name="Widget.KmpWebView.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="cornerRadius">@dimen/corner_medium</item>
+    </style>
+
+    <style name="Widget.KmpWebView.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_button</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.KmpWebView.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/corner_medium</item>
+        <item name="cardElevation">@dimen/elevation_medium</item>
+        <item name="contentPadding">@dimen/padding_card</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TextAppearance.KmpWebView.H1" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">@dimen/text_h1</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+    </style>
+
+    <style name="TextAppearance.KmpWebView.H2" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">@dimen/text_h2</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+    </style>
+
+    <style name="TextAppearance.KmpWebView.H3" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">@dimen/text_h3</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+    </style>
+
+    <style name="TextAppearance.KmpWebView.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/text_body1</item>
+        <item name="android:textColor">@color/text_primary_light</item>
+    </style>
+
+    <style name="TextAppearance.KmpWebView.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">@dimen/text_body2</item>
+        <item name="android:textColor">@color/text_secondary_light</item>
+    </style>
+
+    <style name="TextAppearance.KmpWebView.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/text_secondary_light</item>
+    </style>
+</resources>

@@ -28,13 +28,12 @@ The project follows **Clean Architecture** principles with clear separation betw
 │   │   ├── model/                  # Data Transfer Objects (DTOs)
 │   │   ├── remote/                 # API interfaces and implementations
 │   │   ├── repository/             # Repository implementations
-│   │   ├── result/                 # Result wrapper for error handling
-│   │   └── config/                 # Configuration providers (URL providers)
+│   │   └── result/                 # Result wrapper for error handling
 │   ├── domain/
 │   │   ├── model/                  # Domain models
 │   │   ├── repository/             # Repository interfaces
-│   │   ├── usecase/                # Business logic use cases
-│   │   └── config/                 # Configuration interfaces and use cases
+│   │   └── usecase/                # Business logic use cases
+│   └── di/                         # Dependency injection (SharedModule)
 │   └── di/                         # Dependency injection (SharedModule)
 ├── androidApp/                      # Android application
 │   ├── presentation/
@@ -70,13 +69,11 @@ The project follows **Clean Architecture** principles with clear separation betw
    - Remote: API client using Ktor
    - Repository: Repository implementations
    - Result: Type-safe error handling wrapper
-   - Config: Configuration providers (DefaultUrlProvider)
 
 3. **Domain Layer** - Business logic
    - Models: Domain entities
    - Repository: Repository interfaces
-   - UseCase: Business logic (GetTodoTitleUseCase)
-   - Config: Configuration interfaces and use cases (UrlProvider, GetUrlUseCase)
+   - UseCase: Business logic (GetTodoTitleUseCase, GetUrlUseCase)
 
 4. **Dependency Injection**
    - SharedModule for dependency management

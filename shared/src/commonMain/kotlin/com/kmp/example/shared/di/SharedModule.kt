@@ -5,11 +5,11 @@ import com.kmp.example.shared.core.config.NetworkConfig
 import com.kmp.example.shared.data.remote.TodoApi
 import com.kmp.example.shared.data.remote.TodoApiImpl
 import com.kmp.example.shared.data.repository.TodoRepositoryImpl
-import com.kmp.example.shared.data.config.DefaultUrlProvider
+
 import com.kmp.example.shared.domain.repository.TodoRepository
 import com.kmp.example.shared.domain.usecase.GetTodoTitleUseCase
-import com.kmp.example.shared.domain.config.GetUrlUseCase
-import com.kmp.example.shared.domain.config.UrlProvider
+import com.kmp.example.shared.domain.usecase.GetUrlUseCase
+
 import io.ktor.client.HttpClient
 
 object SharedModule {
@@ -19,10 +19,10 @@ object SharedModule {
 
     private val todoApi: TodoApi by lazy { TodoApiImpl(httpClient) }
     private val todoRepository: TodoRepository by lazy { TodoRepositoryImpl(todoApi) }
-    private val urlProvider: UrlProvider by lazy { DefaultUrlProvider() }
+
 
     private val getTodoTitleUseCase: GetTodoTitleUseCase by lazy { GetTodoTitleUseCase(todoRepository) }
-    private val getUrlUseCase: GetUrlUseCase by lazy { GetUrlUseCase(urlProvider) }
+    private val getUrlUseCase: GetUrlUseCase by lazy { GetUrlUseCase() }
 
     fun provideTodoRepository(): TodoRepository = todoRepository
     fun provideGetTodoTitleUseCase(): GetTodoTitleUseCase = getTodoTitleUseCase

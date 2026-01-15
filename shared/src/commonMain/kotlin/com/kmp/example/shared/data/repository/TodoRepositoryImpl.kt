@@ -8,10 +8,6 @@ import com.kmp.example.shared.data.remote.TodoApi
 import com.kmp.example.shared.domain.model.Todo
 import com.kmp.example.shared.domain.repository.TodoRepository
 
-/**
- * Implementation of TodoRepository.
- * Handles data operations and mapping between DTOs and domain models.
- */
 class TodoRepositoryImpl(
     private val todoApi: TodoApi
 ) : TodoRepository {
